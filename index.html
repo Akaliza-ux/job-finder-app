@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Job Finder App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Job Finder</h1>
+
+    <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search for jobs...">
+
+        <select id="typeFilter">
+            <option value="">All Job Types</option>
+            <option value="full_time">Full Time</option>
+            <option value="part_time">Part Time</option>
+            <option value="contract">Contract</option>
+        </select>
+
+        <input type="text" id="locationFilter" placeholder="Location (e.g. USA)">
+
+        <button onclick="searchJobs()">Search</button>
+    </div>
+<h2>Saved Jobs</h2>
+<button id="clearSavedBtn">Clear All Saved Jobs </button>
+<div id="savedJobsContainer">
+    <p>No jobs saved yet.</p>
+</div>
+
+
+
+    <div id="jobsContainer"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
